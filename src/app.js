@@ -5,6 +5,8 @@ const path=require('path')
 const express=require('express')
 const hbs=require('hbs')
 const app=express()
+//to process environment variable from heroku 
+const port=process.env.PORT ||3000
 
 //define path for express config
 const publicdirpath=path.join(__dirname,'../public')
@@ -98,19 +100,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
-    console.log('the port running is 3000')
+app.listen(port,()=>{
+    console.log('the port running is '+port)
 })
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -5,7 +5,7 @@ function fun(){
         document.getElementById("forecast").innerText='Enter Location'
     }
     else{
-    const url="http://localhost:3000/weather?address="+encodeURIComponent(search)
+    const url="/weather?address="+encodeURIComponent(search)
     fetch(url).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
