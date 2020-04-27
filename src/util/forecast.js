@@ -10,7 +10,7 @@ const forecast=(long,lat,callback)=>{
             callback('area not found',undefined)
         }
         else{
-            callback(undefined,'It is currently '+body.current.temperature+' and feelslike '+body.current.feelslike)
+            callback(undefined,'It is currently '+body.current.temperature+'C and feelslike '+body.current.feelslike+"C")
         }
     })
 }
