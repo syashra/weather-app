@@ -8,6 +8,11 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+    background-image: url('/img/weather-image.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
 }
 
 .main_content{
@@ -15,7 +20,7 @@ body{
 }
 
 footer{
-    color: #888888;
+    color:black;
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0;
@@ -48,4 +53,9 @@ button{
     color: white;
     padding: 8px;
 }
-
+.forecast{
+    color: black;
+}
+.location{
+    color: black;
+}
